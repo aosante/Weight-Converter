@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+        integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <style>
+        body {
+        margin-top: 70px;
+        background: #eaeaea;
+        color: #fff;
+    }
+
+    h1 {
+        margin-bottom: 50px;
+        text-align: center;
+        padding-bottom: .3em;
+        border-bottom: 2px solid rgb(4, 255, 20);
+    }
+
+    #centrar {
+        display: flex;
+    }
+
+    .col-md-6 {
+        margin: auto;
+    }
+
+    #unitOption {
+        margin-bottom: 1.3em;
+    }
+
+    .container {
+        background: #333;
+        border-radius: 3px;
+        padding: 1em;
+        padding-top: 1.3em;
+        box-shadow: 1px 1px 23px 1px rgb(1, 2, 1);
+    }
+
+    #author {
+        float: right;
+    }
+
+    #author span {
+        color: rgb(4, 255, 20);
+    }
+    </style>
+    <title>Weight Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="centrar" class="row">
+            <div class="col-md-6">
+                <!--Insertar un select en donde 
+                se escoge el valor a convertir-->
+                <h1 id="title" class="display-4 text-center">Weight Converter</h1>
+                <h2 class="display-2 text-center"></h2>
+                <form>
+                    <div class="form-group">
+                        <select id="unitOption" class="form-control form-control-lg">
+                            <option value="" disabled selected>Select the value you wish to convert</option>
+                            <option value="pounds">Pounds</option>
+                            <option value="grams">Grams</option>
+                            <option value="kilograms">Kilograms</option>
+                            <option value="ounces">Ounces</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">
+                    </div>
+                </form>
+                <div id="output">
+                    <div id="lbs" class="card card-warning">
+                        <div class="card-block">
+                            <h4>Pounds: </h4>
+                            <div id="lbsOutput"></div>
+                        </div>
+                    </div>
+                    <div id="g" class="card card-primary">
+                        <div class="card-block">
+                            <h4>Grams: </h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+                    <div id="kg" class="card card-success">
+                        <div class="card-block">
+                            <h4>Kilograms: </h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+                    <div id="oz" class="card card-danger">
+                        <div class="card-block">
+                            <h4>Ounces: </h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="author">By: <span>Andrés Osante</span></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
