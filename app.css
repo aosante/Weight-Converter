@@ -1,0 +1,43 @@
+
+body {
+margin-top: 70px;
+background: #eaeaea;
+color: #fff;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+margin-bottom: 50px;
+text-align: center;
+padding-bottom: .3em;
+border-bottom: 2px solid rgb(240, 71, 24);
+}
+
+#centrar {
+display: flex;
+}
+
+.col-md-6 {
+margin: auto;
+}
+
+#unitOption {
+margin-bottom: 1.3em;
+}
+
+.container {
+background: #333;
+border-radius: 3px;
+padding: 1em;
+padding-top: 1.3em;
+box-shadow: 1px 1px 23px 1px rgb(1, 2, 1);
+}
+
+#author {
+float: right;
+margin-right: 1.3em;
+}
+
+#author span {
+color: rgb(240, 71, 24);
+}

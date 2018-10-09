@@ -76,7 +76,7 @@ document.getElementById('lbsInput').addEventListener('input', function (e) {
 //code for text shadow of the title
 const hero = document.querySelector('#title');
   const text = document.querySelector('h1');
-  const walk = 20; //100px
+  const walk = 30; //100px
 
   function shadow(e) {
     const {offsetWidth: width, offsetHeight: height} = hero;
